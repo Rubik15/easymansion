@@ -1,0 +1,20 @@
+//COLOR PALETTE
+
+$primary-easy-mansion: #227C9D;
+$secondary-easy-mansion: #17C3B2;
+$tertiary-easy-mansion: #FFCB77;
+$fourth-easy-mansion: #FEF9EF;
+$fifth-easy-mansion: #FE6D73;
+
+
+//FONT STACK
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+$font-stack: "Merriweather", serif;
+//PAGE BASICS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

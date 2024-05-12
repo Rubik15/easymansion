@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Easymansion - Home Page</title>
+</head>
+<body>
+    <header class="page-header">
+        <img src="/assets/images/general/logo.png">
+        <nav>
+            <ul>
+                <a href="msg.html"><li>Messaggi</li></a>
+                <a href="msg.html"><li>❤️ Preferiti</li></a>
+            </ul>
+        </nav>
+        <div class="page-header-logger">
+            <a href="profile.html">Matteo</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </header>
+    <section class="page-filter">
+        <button class="dropdown-std">Filter By <img src="/assets/images/dev/filter.jpg"></button>
+        <div class="range-container">
+            <input type="range" min="1" max="50">
+            <p id="page-filter-values"></p>
+        </div>
+    </section>
+    <main>
+        <h1 class="mansion-founded-claim">3 Immobili Trovati!</h1>
+        <section class="mansion-list">
+            <div class="mansion-card">
+                <img src="/assets/images/immobili/casa-sample.png">
+                <div class="mansion-card-info">
+                    <h1>Trilocale Via Rossi, 1</h1>
+                    <div class="card-prop-info">
+                        <p><em><a href="prop-profile.html">Proprietario:</a></em> Mario Rossi</p>
+                        <p><em>Sesso:</em> Uomo</p>
+                        <p><em>Età:</em> 56</p>
+                        <p><em><a href="recensioni.html">Recensioni:</a></em> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="mansion-card-divider"></div>  
+                <div class="card-asset-info">
+                    <p><em>Affitto:</em> 550€</p>
+                    <p><em>Spese Condominiali:</em> 40€/mese</p>
+                    <p><em>Tipo Contratto:</em> Transitorio</p>
+                    <p><em>Animali:</em> Solo Gatti</p>
+                    <p><em>Libero:</em> Subito</p>
+                </div>
+            </div>
+            <div class="mansion-card">
+                <img src="/assets/images/immobili/casa-sample.png">
+                <div class="mansion-card-info">
+                    <h1>Bilocale Via Verdi, 15</h1>
+                    <div class="card-prop-info">
+                        <p><em><a href="prop-profile.html">Proprietario:</a></em> Mara Verdi</p>
+                        <p><em>Sesso:</em> Donna</p>
+                        <p><em>Età:</em> 34</p>
+                        <p><em><a href="recensioni.html">Recensioni:</a></em> ⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="mansion-card-divider"></div>  
+                <div class="card-asset-info">
+                    <p><em>Affitto:</em> 650€</p>
+                    <p><em>Spese Condominiali:</em> 20€/mese</p>
+                    <p><em>Tipo Contratto:</em> 4+4</p>
+                    <p><em>Animali:</em> No</p>
+                    <p><em>Libero:</em> 1 Maggio 2024</p>
+                </div>
+            </div>
+            <div class="mansion-card">
+                <img src="/assets/images/immobili/casa-sample.png">
+                <div class="mansion-card-info">
+                    <h1>Villa Via Truffaldina, 18</h1>
+                    <div class="card-prop-info">
+                        <p><em><a href="prop-profile.html">Proprietario:</a></em> John Truffatore</p>
+                        <p><em>Sesso:</em> Uomo</p>
+                        <p><em>Età:</em> 41</p>
+                        <p><em><a href="recensioni.html">Recensioni:</a></em> ⭐</p>
+                    </div>
+                </div>
+                <div class="mansion-card-divider"></div>  
+                <div class="card-asset-info">
+                    <p><em>Affitto:</em> 250€</p>
+                    <p><em>Spese Condominiali:</em> 0€/mese</p>
+                    <p><em>Tipo Contratto:</em> Transitorio, 4+4 ...</p>
+                    <p><em>Animali:</em> Tutti</p>
+                    <p><em>Libero:</em> Subito</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        let pDist = document.querySelector('#page-filter-values');
+        let rangeBar = document.querySelector('input');
+        rangeBar.addEventListener('change', updateValue);
+        pDist.innerHTML = rangeBar.value + ' Km';
+
+        function updateValue(){
+            pDist.innerHTML = rangeBar.value + ' Km';
+        }
+    </script>
+</body>
+</html>
